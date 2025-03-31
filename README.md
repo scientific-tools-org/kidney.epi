@@ -2,7 +2,7 @@
 
 This is the source code for the "kidney.epi" R package that contains kidney-related functions for clinical and epidemiological research.  
 
-The kidney.epi package is made with care by the research consultancy [Scientific-Tools.Org](https://Scientific-Tools.Org/).
+The kidney.epi package is made with care by the research consultancy [Scientific-Tools.Org](https://Scientific-Tools.Org/).  
 Contact us for data analysis or software development at [Scientific-Tools.Org](https://Scientific-Tools.Org/contact/) or via 'maintainer("kidney.epi")', connect with the [author on LinkedIn](https://www.linkedin.com/in/boris-bikbov/).  
 Support this and other Scientific-Tools.Org projects: https://Scientific-Tools.Org/support-us/  
 [Home page](https://kidney.scientific-tools.org/r/) and [GitHub repository](https://github.com/scientific-tools-org/kidney.epi) of the package.  
@@ -42,4 +42,4 @@ List of vignettes are available via
 
 ## License
 
-This project is licensed under the [CC BY-NC 4.0 License](https://creativecommons.org/licenses/by-nc/4.0/).
+This project is licensed under the LGPL (>=2).
