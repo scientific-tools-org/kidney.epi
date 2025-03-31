@@ -1,0 +1,22 @@
+# kidney.epi 1.3.0 (2025-03-31)
+* add a set of functions for estimated glomerular filtration rate (eGFR) calculation
+* change eGFR CKD-EPI function names due to availability of CKD-EPI 2009 and 2021 equations
+* for KDPI calculation function extended KDPI mapping coefficients up to 2024 year 
+* introduce additional service functions
+* add ckd.data data set 
+* rename data set ktx to ktx.data
+* update vignettes
+
+# kidney.epi 1.2.0 (2020-03-04)
+* add a set of functions for estimated glomerular filtration rate (eGFR) calculation
+* add OPTN mapping values for the years 2018 and 2014
+* change parameter name from creatinineunits to creatinine_units in function ktx.kdpi.optn
+* introduce additional service functions
+
+# kidney.epi 1.1.0 (2018-09-10)
+* introduce service functions
+* add OPTN mapping values for the year 2017 to the internal dataframes in sysdata.rda
+* add check of the user input for ktx.kdpi.optn function
+
+# kidney.epi 1.0.0 (2018-06-19)
+* first public release of the package

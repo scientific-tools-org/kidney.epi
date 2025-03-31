@@ -1,0 +1,11 @@
+citHeader("To cite the kidney.epi package in publications use:")
+bibentry(bibtype = "Manual", 
+    author = c(as.person("Bikbov Boris")), 
+	title = "kidney.epi: Kidney-Related Functions for Clinical and Epidemiological Research", 
+	year = 2025, 
+	organization = "Scientific-Tools.Org",
+    url = "https://Scientific-Tools.Org", 
+	doi = "10.32614/CRAN.package.kidney.epi",
+    textVersion = paste("Bikbov B.", 
+        "kidney.epi: Kidney-Related Functions for Clinical and Epidemiological Research.", 
+        "Scientific-Tools.Org, https://Scientific-Tools.Org. DOI: 10.32614/CRAN.package.kidney.epi"))

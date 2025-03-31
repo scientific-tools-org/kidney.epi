@@ -1,0 +1,117 @@
+---
+title: "Services"
+output: rmarkdown::html_document
+vignette: >
+  %\VignetteIndexEntry{Services}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+# 💼 Services
+
+At **Scientific-Tools.Org**, we provide custom solutions for data-intensive research and digital projects. Our services are grounded in reproducibility, efficiency, and research integrity — designed to save time, reduce duplication, and deliver high-quality results.
+
+---
+
+## 🔗 Connect
+
+We support research teams in discovering, accessing, and linking data efficiently:
+
+- **Data linkage** – Combine datasets through harmonized keys or intelligent matching  
+- **Data search** – Locate and curate data from open and licensed sources  
+- **Data pipelines** – Build reproducible, automated data flows  
+- **Data processing** – Clean, harmonize, and structure raw data for analysis
+- [more details](https://scientific-tools.org/services/service-connect-building-intelligent-integrated-data-systems-for-science-health/)
+
+---
+
+## 🧐 Check
+
+We critically review data and research outputs to ensure scientific rigor:
+
+- **Data review** – Assess data consistency, completeness, and readiness  
+- **Manuscript revision** – Improve clarity, flow, and scientific language  
+- **Critical appraisal** – Review scientific content from an evidence-based perspective  
+- **English correction** – Refine grammar and style for international publishing standards
+- [more details](https://scientific-tools.org/services/service-check-strengthen-your-scientific-work-with-expert-review-and-editing/)
+
+---
+
+## 🔬 Investigate
+
+We perform high-quality, methodologically sound scientific research and analysis:
+
+- **Scientific research** – Design and execution of original studies  
+- **Statistical analysis** – Advanced statistical modeling and inference  
+- **RWE analysis** – Real-world evidence studies using observational data  
+- **Data evaluation** – Comprehensive assessment of trends, patterns, and impact
+- [more details](https://scientific-tools.org/services/service-investigate-from-hypothesis-to-insight/)
+
+---
+
+## 📊 Visualize
+
+We turn complex data into clear, compelling visuals for communication and decision-making:
+
+- **Figure preparation** – Scientific figures for journals and reports  
+- **Interactive Viz for web** – Dynamic web-based visualizations  
+- **Presentation design** – Custom visuals for academic and professional audiences  
+- **Video production** – Animated explainers and data-driven storytelling
+- [more details](https://scientific-tools.org/services/service-visualize-transforming-complex-data-into-clear-communication/)
+
+---
+
+## ✍️ Write
+
+We help synthesize and present your work in polished, publication-ready form:
+
+- **Knowledge synthesis** – Systematic reviews, scoping reviews, and research trend analysis
+- **Manuscript preparation** – Drafting sections or full manuscripts  
+- **Report production** – Technical and policy reporting  
+- **Data description** – Descriptive analysis and documentation
+- [more details](https://scientific-tools.org/services/service-write-turning-data-into-impactful-communication/)
+
+---
+
+## 🌍 Communicate
+
+We help you build a professional presence and reach the right audiences:
+
+- **Web-site development** – Research group and project websites  
+- **Web-site management** – Ongoing updates, maintenance, and content management  
+- **Social marketing** – Science-focused outreach strategies  
+- **Media campaigns** – Coordinated visibility across channels
+- [more details](https://scientific-tools.org/services/service-communicate-make-your-work-visible-and-impactful/)
+
+---
+
+## 🛠 Develop
+
+We create reusable and open scientific tools tailored to your workflows:
+
+- **Software development** – Apps, scripts, and tools for scientific work  
+- **Database projection** – Design of research-ready relational databases  
+- **R package development** – Custom documented packages for reuse  
+- **Script preparation** – Clean and modular R scripts for automation
+- [more details](https://scientific-tools.org/services/service-develop-custom-scientific-tools-to-streamline-your-workflow/)
+
+---
+
+## 💶 Fund
+
+We support research initiatives at the funding stage and beyond:
+
+- **EU funds assistance** – Navigating Horizon Europe and related programs  
+- **Proposal preparation** – Technical and scientific writing support  
+- **Proposal review** – Expert critique to improve fundability  
+- **Report preparation** – Interim and final reporting for grants
+- [more details](https://scientific-tools.org/services/service-fund-secure-grants-and-drive-your-project-forward/)
+
+---
+
+## 🤝 Work
+
+We work in close collaboration with each client, according to clearly defined agreements and deadlines. Our commitment is to deliver reliable, high-quality results — on time, every time.
+
+📬 *Let’s discuss how we can support your next project.*  
+Contact us at [Scientific-Tools.Org](https://Scientific-Tools.Org/contact/) or [connect on LinkedIn](https://www.linkedin.com/in/boris-bikbov/).

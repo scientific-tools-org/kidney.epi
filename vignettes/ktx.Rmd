@@ -1,0 +1,127 @@
+---
+title: "Kidney transplantation"
+author: "Boris Bikbov, [Scientific-Tools.Org](https://Scientific-Tools.Org)"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Kidney transplantation}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+# Kidney transplantation
+
+kidney.epi R package includes functions which useful for kidney transplantation, and a sample data frame.
+
+See also: [Scientific-Tools.Org], [kidneyepidemiology.org]
+
+## Dataframes
+
+* ktx.data - contains data for 10 kidney transplant patients (*see description in documentation*).
+
+```{r}
+library(kidney.epi)
+head(ktx.data)
+```
+
+## Functions
+
+The years from 2014 to 2024 are supported. More is underway. [Scientific-Tools.Org](https://Scientific-Tools.Org/) provides research and consulting services for policy makers, industry, scientists, patient organizations, and citizens. This package is developed in our free time or with [your support](https://Scientific-Tools.Org/support-us/).  
+
+### Calculate KDPI and KDRI with `ktx.kdpi.optn`
+
+Function ktx.kdpi.optn calculates Kidney Donor Risk Index (KDRI) and Kidney Donor Profile Index (KDPI) based on the algorithm of US Organ Procurement and Transplantation Network.
+
+In case you use this function and kidney.epi package for preparation of a manuscript, please use the following citation: "Bikbov B. R open source programming code for calculation of the Kidney Donor Profile Index and Kidney Donor Risk Index. Kidney Disease. 2018; 4:269–272 doi:10.1159/000492427".
+
+You can use `ktx.kdpi.optn` function either for calculation of KDPI and KDRI for a single patient, or for a dataset.
+
+To calculate for a single patient, use the following syntax:
+```{r}
+# call ktx.kdpi.optn function, and directly set parameters values
+ktx.kdpi.optn(age = 60, 
+  height_cm = 168, 
+  weight_kg = 93, 
+  ethnicity = "White", 
+  hypertension = "yes", 
+  diabetes = "no", 
+  causeofdeath = "roadinjury", 
+  creatinine = 1.4, 
+  hcv = "negative", 
+  dcdstatus = "no", 
+  creatinine_units = "mg/dl", 
+  return_output_type = "KDRI_Rao")
+```
+
+To calculate for a multiple patients in a dataset, use the following syntax:
+```{r}
+# copy internal dataframe ktx.data from the kidney.epiR package to your data frame
+mydata <- ktx.data
+
+# calculate Kidney Donor Profile Index (KDPI) using the latest available OPTN mapping values
+mydata$kdpi <- ktx.kdpi.optn ( age = mydata$don.age,
+  height_cm = mydata$don.height, weight_kg = mydata$don.weight,
+  ethnicity = mydata$don.ethnicity, hypertension = mydata$don.hypertension,
+  diabetes = mydata$don.diabetes, causeofdeath = mydata$don.causeofdeath,
+  creatinine = mydata$don.creatinine, hcv = mydata$don.hcv,
+  dcdstatus = mydata$don.dcd, creatinine_units = "mg/dl",
+  # which param to return
+  return_output_type = "KDPI",
+  # customize all labels used in the dataframe
+  # label for Afroamerican ethnicity 
+  label_afroamerican = c ("Afroamerican"),
+  # label for a positive history of hypertension
+  label_hypertension_positive = c ("Yes", "YES"),
+  # label for an unknown history of hypertension
+  label_hypertension_unknown = "N/A", # if missing values defined unknown history then use "NA" (with quotes!)
+  # label for a positive history of diabetes
+  label_diabetes_positive = c ("Yes", "YES"),
+  # label for an unknown history of diabetes
+  label_diabetes_unknown = "N/A", # if missing values defined unknown history then use "NA" (with quotes!)
+  # label for a cause of death due to cerebrovascular/stroke
+  label_causeofdeath = c ("cerebrovascular"),
+  # label for a positive hcv status
+  label_hcv_positive = c ("positive"),
+  # label for an unknown, not done, indeterminate, or pending hcv status
+  label_hcv_unknown = "NA", # if missing values defined unknown history then use "NA" (with quotes!)
+  # label for a donation after circulatory death status
+  label_dcdstatus = c ("Yes")
+) 
+
+# show descriptive stat for the calculated values
+summary(mydata$kdpi)
+```
+
+Take in account that the labels used in parameters of the function have to correspond to the labels used in your data frame. In the example above the labels for positive history of hypertension are defined as *label_hypertension_positive = c ("Yes", "YES")* that means in the data frame it could be either "Yes" or "YES". In case you use different labeling in your data frame, define this appropriately. For example, if you define a positive history of hypertension as 1 and negative history as 0, you have to change the labeling in parameters of the function to *label_hypertension_positive = c (1)*.
+
+
+**Important notice on NA (not available values)**  
+Be careful with labeling of missing/unknown data for a history of hypertension and diabetes.  
+If donors with an unknown history of hypertension in your data file has a standard R missing value NA, set the parameter label_hypertension_unknown = "NA" *(with quotes!)*.  
+If donors with an unknown history of hypertension in your data file defined as "no data", set the parameter label_hypertension_unknown = "no data".  
+If donors with an unknown history of hypertension in your data file defined as 999, set the parameter label_hypertension_unknown = 999.
+
+
+Note that by default KDPI and KDRI are calculated by the latest available OPTN revision (by default the parameter is `mapping_values_year` = "latest"). If you wish to change the reference year, set the `mapping_values_year` equal to the year. To see for which years the OPTN revision is available in the R package, use function `ktx.kdpi.optn.show.years()`.
+
+
+### Show years available in the OPTN mapping table with `ktx.kdpi.optn.show.years`
+
+Shows which years are available in the R package for the OPTN mapping table, KDRI scaling factor, etc. These years could be defined in the `mapping_values_year` parameter of the `ktx.kdpi.optn` function.
+
+```{r}
+ktx.kdpi.optn.show.years()
+```
+
+## References
+
+* Rao PS, Schaubel DE, Guidinger MK, Andreoni KA. A Comprehensive Risk Quantification Score for Deceased Donor Kidneys: The Kidney Donor Risk Index. Transplantation 2009; 88: 231–6.  
+* Guide to calculating and interpreting KDPI could be found at https://optn.transplant.hrsa.gov/media/1512/guide_to_calculating_interpreting_kdpi.pdf  
+* Bikbov B. R open source programming code for calculation of the Kidney Donor Profile Index and Kidney Donor Risk Index. Kidney Disease. 2018; 4:269–272 doi:10.1159/000492427  

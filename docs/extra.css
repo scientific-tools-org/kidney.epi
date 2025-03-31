@@ -1,0 +1,8 @@
+pre code {
+  white-space: pre-wrap !important;
+  word-break: break-word;
+}
+
+.section:has(dt a[href$="services.html"]) {
+  display: none;
+}

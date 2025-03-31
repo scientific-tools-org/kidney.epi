@@ -2,10 +2,10 @@
 
 This is the source code for the "kidney.epi" R package that contains kidney-related functions for clinical and epidemiological research.  
 
-The kidney.epi package is made with care by the research consultancy [Scientific-Tools.Org](https://Scientific-Tools.Org).
-Contact us for data analysis or software development at [Scientific-Tools.Org](https://Scientific-Tools.Org/contact) or via 'maintainer("kidney.epi")', connect with the [author on LinkedIn](https://www.linkedin.com/in/boris-bikbov).  
+The kidney.epi package is made with care by the research consultancy [Scientific-Tools.Org](https://Scientific-Tools.Org/).
+Contact us for data analysis or software development at [Scientific-Tools.Org](https://Scientific-Tools.Org/contact/) or via 'maintainer("kidney.epi")', connect with the [author on LinkedIn](https://www.linkedin.com/in/boris-bikbov/).  
 Support this and other Scientific-Tools.Org projects: https://Scientific-Tools.Org/support-us/  
-[Home page](https://kidney.scientific-tools.org/r) and [GitHub repository](https://github.com/scientific-tools-org/kidney.epi) of the package.  
+[Home page](https://kidney.scientific-tools.org/r/) and [GitHub repository](https://github.com/scientific-tools-org/kidney.epi) of the package.  
 Connect with us on social platforms: [LinkedIn](https://www.linkedin.com/company/scientific-tools-org/) [X/Twitter](https://twitter.com/SciToolsOrg)
 
 

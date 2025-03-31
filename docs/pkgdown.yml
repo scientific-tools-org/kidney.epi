@@ -1,0 +1,11 @@
+pandoc: '3.5'
+pkgdown: 2.1.1
+pkgdown_sha: ~
+articles:
+  gfr: gfr.html
+  ktx: ktx.html
+  services: services.html
+last_built: 2025-03-31T13:35Z
+urls:
+  reference: https://scientific-tools.org/portfolio-item/r-open-source-kidney-epi-package/reference
+  article: https://scientific-tools.org/portfolio-item/r-open-source-kidney-epi-package/articles
