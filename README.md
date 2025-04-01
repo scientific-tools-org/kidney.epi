@@ -13,6 +13,9 @@ Connect with us on social platforms: [LinkedIn](https://www.linkedin.com/company
 	citation("kidney.epi")
 Bikbov B. kidney.epi: Kidney-Related Functions for Clinical and Epidemiological Research. Scientific-Tools.Org, https://Scientific-Tools.Org. doi:10.32614/CRAN.package.kidney.epi.
 
+## Package downloads
+![CRAN Downloads](https://cranlogs.r-pkg.org/badges/grand-total/kidney.epi)
+
 ## Agreement on prefix of function names and internal data frames
 nephro. - related to nephrology in general  
 ktx. - related to kidney transplantation  
